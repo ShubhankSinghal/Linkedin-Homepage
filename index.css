@@ -1,13 +1,14 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    overflow: auto;
 }
 .navbar {
     overflow: hidden;
     background-color: rgb(40, 62, 74);
 }
 
-.navbar div {
+.navbar .div0 {
     width: 70px;
     float: left;
     font-size: 12px;
@@ -68,3 +69,181 @@ body{
 .logo:hover, .search:hover, .dropbtn:hover{
     cursor: pointer;
 }
+
+.main1{
+    margin-top: 40px;
+}
+
+.div1{
+    width: 200px;
+    height: auto;
+    margin-left: 100px;
+    float: left;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.div11, .div12{
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 10px;
+}
+
+.div2{
+    width: 600px;
+    height: auto;
+    float: left;
+    margin-left: 25px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.div3{
+    width: 300px;
+    height: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-left: 20px;
+    float: left;
+}
+
+.inline1:hover{
+    color:rgb(0,158,218);
+}
+
+.link1{
+    color: #000;
+    text-decoration: none;
+}
+
+.link1:hover{
+    text-decoration: underline;
+}
+
+.recent, .follow{
+    display: display;
+}
+
+.modal {
+    display: none; 
+    position: absolute; 
+    z-index: 1; 
+    padding-top: 50px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: auto;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    width: 50%;
+    overflow: hidden;
+  }
+  
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #fff;
+    color: #000;
+    overflow: hidden;
+  }
+  
+  .modal-body {padding: 2px 16px;
+    overflow: hidden;}
+  
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #fff;
+    color: #000;
+    overflow: hidden;
+  }
+
+  .create{
+    float: right; 
+    background: rgb(0,96,159); 
+    color: #fff; 
+    height: 30px;
+  }
+
+
+  /* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }

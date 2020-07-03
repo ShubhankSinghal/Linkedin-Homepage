@@ -11,44 +11,44 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo" style="height: 40px; width: 50px; margin-top: 5px; margin-left: 100px;"><img src="./image/linkedin.png" width="35px" height="35px"></div>
-            <div class="search-container" style="width: auto;" >
+            <div class="logo div0" style="height: 40px; width: 50px; margin-top: 5px; margin-left: 100px;"><img src="./image/linkedin.png" width="35px" height="35px"></div>
+            <div class="search-container div0" style="width: auto;" >
                 <form action="#search" style="margin: 0;">
                   <input type="text" placeholder="Search.." name="search" style="width: 250px; height: 30px;">
                   <button type="submit" style="padding: 0;" class="search"><img src="./image/search.png" height="25px" width="25px" style="padding: 0px;"></button>
                 </form>
               </div>
-            <div style="margin-left: 120px;" > 
+            <div class="div0" style="margin-left: 120px;" > 
                 <a href="#home" style="color: #fff;">
                     <img src="./image/home1.png" width="25px" height="25px"><br>
                     Home
                 </a>
             </div>
-            <div>
+            <div class="div0">
                 <a href="#myNetwork">
                     <img src="./image/two-men.png" width="25px" height="25px"><br>
                     My Network
                 </a>
             </div>
-            <div>
+            <div class="div0">
                 <a href="#jobs">
                     <img src="./image/work.png" width="25px" height="25px"><br>
                     Jobs
                 </a>
             </div>
-            <div>
+            <div class="div0"> 
                 <a href="#messaging">
                     <img src="./image/message.png" width="25px" height="25px"><br>
                     Messaging
                 </a>
             </div>
-            <div>
+            <div class="div0">
                 <a href="#notifications">
                     <img src="./image/notification.png" width="25px" height="25px"><br>
                     Notifications
                 </a>
             </div>
-            <div class="dropdown" onclick="toggle1()">
+            <div class="dropdown div0" onclick="toggle1()">
                 <a class="dropbtn">
                     <img  src="image/user.png" width="25px" height="25px"><br>
                     Me 
@@ -70,21 +70,160 @@
                     <a href="#" class="dropdown-list" style="width: 150px;">Sign out</a>
                 </div>
               </div>
-              <div class="vl" style="width: 0px;"></div>
-              <div>
+              <div class="vl div0" style="width: 0px;"></div>
+              <div class="div0">
                 <a href="#">
                   <img src="image/keyboard.png" width="25px" height="25px"><br>
                   Work
                 </a>
               </div>
-              <div style="margin-top: 10px;">
+              <div class="div0" style="margin-top: 10px;">
                   <a href="#" style="color: rgb(220, 206, 164); width: 100px;" class="link">Try Premium Free for 1 Month</a>
               </div>
         </nav>
     </header>
 
-    <main>
-        
+    <main class="main1">
+        <!--Left-->
+        <div class="div1">
+            <div class="div11">
+                <span style="text-align: center;">
+                    <img src="./image/user.png" width="50px" height="50px" style="margin-top: 15px; padding-left: 65px;">
+                    <h2>Name</h2>
+                    <h4>Position</h4>
+                </span>
+                <hr>
+                <br>
+                <a href="#networks" class="link1">
+                    Connections<br><b class="inline1">Grow your network</b>
+                    <span style="color:rgb(0,96,159); margin-left: 50px;">73</span>
+                </a>
+                <br>
+                <br>
+                <a href="#profile" class="link1" >
+                    Who viewed your profile
+                    <span style="color:rgb(0,96,159); margin-left: 30px;">80</span>
+                </a>
+                <br>
+                <br><br>
+                <a href="#offer" class="link1" >
+                        Access exclusive tools & insights<br>
+                        <b>Try Premium Free for 1 Month</b> 
+                </a>
+                <hr>    
+                <span style="padding: 10px; margin: 10px;"> Saved items </span> 
+            </div>
+            <div class="div12" style="float:left; margin-top: 20px; width: 180px;">
+                <span onclick="toggle2()"><h4>Recent</h4></span>
+                <ul class="recent" id="recent" style="list-style-type: '# ';">
+                    <li>programming</li>
+                    <li>softwaredesign</li>
+                    <li>softwareengineering</li>
+                </ul>
+                <br>
+                <h4>Groups</h4>
+                Events <span style="float: right; font-size: 15px; cursor: pointer;" onclick="myBtn()"><b>+</b></span>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                          <span class="close" onclick="closed()">&times;</span>
+                          <h2>Create Event</h2>
+                        </div>
+                        <div class="modal-body">
+                          <form action="#">
+                              Event name<br>
+                                <input type="text" required style="width: 100%"><br><br>
+                                Is this an online event? 
+                                <span class="yes">Yes</span>
+                                <label class="switch">
+                                <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                                <span class="no">No</span>
+                                <br><br>
+                                Broadcast link<br>
+                                <input type="text" style="width: 100%" placeholder="Add a live stream or webinar link, now or later"><br>
+                                For LinkedIn Live, link is not needed<br><br>
+                                Date and time<br>
+                                <input type="date"> &nbsp <input type="time"> to <input type="date"> &nbsp <input type="time">
+                                <br><br>TimeZone<br>
+                                <select>
+                                    <option>(UTC-12:00) International Date Line West</option>
+                                    <option>  (UTC-11:00) Midway Island, Samoa</option>
+                                    <option>  (UTC-10:00) Hawaii</option>
+                                    <option>  (UTC-09:30) Marquesas Islands</option>
+                                    <option> (UTC-09:00) Aleutian Islands</option>
+                                    <option> (UTC-08:00) Alaska</option>
+                                    <option> (UTC-08:00) Pitcairn Islands</option>
+                                    <option> (UTC-07:00) Pacific Time (US and Canada), Tijuana</option>
+                                    <option> (UTC-07:00) Arizona</option>
+                                    <option>  (UTC-06:00) Mountain Time (US and Canada)</option>
+                                    <option> (UTC-06:00) Chihuahua, La Paz, Mazatlan</option>
+                                    <option> (UTC-06:00) Saskatchewan</option>
+                                    <option> (UTC-06:00) Central America</option>
+                                    <option> (UTC-05:00) Central Time (US and Canada)</option>
+                                    <option> (UTC-05:00) Guadalajara, Mexico City, Monterrey</option>
+                                    <option> (UTC-05:00) Bogota, Lima, Quito</option>
+                                    <option> (UTC-04:00) Eastern Time (US and Canada)</option>
+                                    <option> (UTC-04:00) Indiana (East)</option>
+                                    <option> (UTC-04:00) Caracas, La Paz</option>
+                                    <option> (UTC-04:00) Santiago</option>
+                                    <option> (UTC-03:00) Atlantic Time (Canada)</option>
+                                    <option>  (UTC-03:00) Brasilia</option>
+                                    <option> (UTC-03:00) Buenos Aires, Georgetown</option>
+                                    <option>  (UTC-02:30) Newfoundland and Labrador</option>
+                                    <option>  (UTC-02:00) Greenland</option>
+                                    <option>  (UTC-02:00) Mid-Atlantic</option>
+                                    <option> (UTC-01:00) Cape Verde Islands</option>
+                                    <option> (UTC) Azores</option>
+                                    <option> (UTC) Coordinated Universal Time</option>
+                                    <option> (UTC) Reykjavik</option>
+                                </select>
+                                <br><br>
+                                Description<br>
+                                <textarea name="description" id="description" rows="5" required></textarea>
+                                <br><br>
+                                Ticketing Website<br>
+                                <input type="text" style="width: 100%">
+                                <br><br>
+                                Event Visibility<br>
+                                Event Visibility can't be changed once the event is created. Learn more.<br>
+                                <input type="radio" name="visibility"> Public Event<br>Visible to anyone on LinkedIn. Anyone can choose to attend.<br>
+                                <input type="radio" name="visibility"> Private Event<br>Visible to invitees and anyone else with the event link. Non-invitees need your approval to attend.<br>
+
+                                <div class="modal-footer">
+                                <h4>
+                                  You agree to LinkedIn’s terms and conditions for events.
+                                  <button type="submit" class="create">Create</button>
+                                </h4>
+                                </div>
+                            </form>
+                        </div>    
+                      </div>
+                </div>
+                <br>
+                <br>
+                <span onclick="toggle3()"><h4>Followed Hashtags</h4></span>
+                <ul class="follow" id="follow" style="list-style-type: '# ';">
+                    <li>programming</li>
+                    <li>softwaredesign</li>
+                    <li>softwareengineering</li>
+                </ul>
+                <br>
+                <hr>
+                <div style="text-align: center;"><b>Discover more</b></div>
+            </div>
+        </div>
+            
+        <!--Center-->
+        <div class="div2">
+            center
+        </div>
+            
+        <!--Right-->
+        <div class="div3">
+            right
+        </div>
     </main>
 </body>
 </html>
