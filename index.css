@@ -57,11 +57,63 @@ body{
 .dropdown-content{
     background: #fff;
     display: none;
-    position: absolute;
+    position: fixed;
     z-index: 1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    margin-top: 20px;
+    margin-top: 50px;
+}
+
+.dropdown-list1{
+    width: auto;
+    text-align: left;
+    font-size: 15px;
+    font-style: bold;
+    text-decoration: none;
+    padding: 5px;
+    color: rgb(145, 145, 145);
+}
+
+.dropdown-list1:hover{
+  background: #c7d1d8;
+  color: #000
+}
+
+.dropdown-content1{
+  background: #fff;
+  display: none;
+  position: absolute;
+  z-index: 1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  top:330px;
+  right: 400px;
+}
+
+.dropdown-list2{
+  width: auto;
+  text-align: left;
+  font-size: 15px;
+  font-style: bold;
+  text-decoration: none;
+  padding: 5px;
+  color: rgb(145, 145, 145);
+}
+
+.dropdown-list2:hover{
+background: #c7d1d8;
+color: #000
+}
+
+.dropdown-content2{
+background: #fff;
+display: none;
+position: absolute;
+z-index: 1;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+top:940px;
+right: 400px;
 }
 
 .profile{
@@ -83,7 +135,7 @@ body{
 .main1 {
   padding: 16px;
   margin-top: 70px;
-  height: 1500px; /* Used in this example to enable scrolling */
+  height: auto;
 }
 
 .div1{
@@ -105,12 +157,17 @@ body{
   width: 100%;
 }
 
+.div13{
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 10px;
+  margin-top: 30px;
+}
+
 .div2{
     width: 600px;
     height: auto;
     float: left;
     margin-left: 25px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 .div3{
@@ -131,6 +188,16 @@ body{
 
 .link1:hover{
     text-decoration: underline;
+}
+
+.user{
+  color: #666;
+  text-decoration: none;
+}
+
+.user:hover{
+  text-decoration: underline;
+  color:rgb(0,158,218);
 }
 
 .recent, .follow{
@@ -320,4 +387,36 @@ body{
 
 .foot-links:hover{
   color: rgb(139,188,215);
+}
+
+.center{
+  margin: 20px;
+  color: rgb(72,93,105);
+  font-size: 16px;
+  width: auto;
+  height: auto;
+}
+
+.center:hover{
+  background-color: rgb(243, 243, 243);
+  color: #000;
+}
+
+.center1{
+  display: inline-block;
+  color: rgb(72,93,105);
+  font-size: 14px;
+  width: auto;
+  height: auto;
+}
+
+.center1:hover{
+  background-color: rgb(243, 243, 243);
+  color: #000;
+}
+
+hr{
+  padding: 0; 
+  margin: 0; 
+  opacity: 0.4;
 }

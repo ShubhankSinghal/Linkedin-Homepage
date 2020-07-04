@@ -25,6 +25,24 @@ function toggle1() {
     }
   }
 
+  function toggle4() {
+    var x = document.getElementById("dropdown-content1");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  function toggle5() {
+    var x = document.getElementById("dropdown-content2");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
 //event form
 function myBtn() {
     document.getElementById("myModal").style.display = "block";
