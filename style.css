@@ -47,6 +47,7 @@ body{
 .dropdown-list{
     padding: 5px;
     color: rgb(145, 145, 145);
+    cursor: pointer;
 }
 
 .dropdown-list:hover{
@@ -72,6 +73,7 @@ body{
     text-decoration: none;
     padding: 5px;
     color: rgb(145, 145, 145);
+    cursor: pointer;
 }
 
 .dropdown-list1:hover{
@@ -86,7 +88,7 @@ body{
   z-index: 1;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  top:330px;
+  top:340px;
   right: 400px;
 }
 
@@ -98,6 +100,7 @@ body{
   text-decoration: none;
   padding: 5px;
   color: rgb(145, 145, 145);
+  cursor: pointer;
 }
 
 .dropdown-list2:hover{
@@ -112,12 +115,13 @@ position: absolute;
 z-index: 1;
 min-width: 160px;
 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-top:940px;
+top:950px;
 right: 400px;
 }
 
 .profile{
     color: rgb(24,111,161);
+    cursor: pointer;
 }
 
 .profile:hover{
@@ -201,7 +205,7 @@ right: 400px;
 }
 
 .recent, .follow{
-    display: display;
+    display: block;
 }
 
 .modal {
@@ -383,40 +387,55 @@ right: 400px;
   margin: 10px;
   font-size: 12px;
   color: rgb(72,93,105);
+  cursor: pointer;
 }
 
 .foot-links:hover{
   color: rgb(139,188,215);
 }
 
-.center{
-  margin: 20px;
-  color: rgb(72,93,105);
-  font-size: 16px;
-  width: auto;
-  height: auto;
-}
 
-.center:hover{
-  background-color: rgb(243, 243, 243);
-  color: #000;
-}
-
-.center1{
-  display: inline-block;
-  color: rgb(72,93,105);
-  font-size: 14px;
-  width: auto;
-  height: auto;
-}
-
-.center1:hover{
-  background-color: rgb(243, 243, 243);
-  color: #000;
-}
 
 hr{
   padding: 0; 
   margin: 0; 
   opacity: 0.4;
+}
+
+.news{
+  padding: 5px;
+  text-align: left;
+}
+
+.news:hover{
+  background : #eee;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.block{
+  padding: 5px;
+}
+
+.block:hover{
+  background : #eee;
+  cursor: pointer;
+}
+
+.center{
+  color: rgb(72,93,105);
+  font-size: 16px;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  margin: 2px;
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.center:hover{
+  background-color: rgb(243, 243, 243);
+  color: #000;
 }

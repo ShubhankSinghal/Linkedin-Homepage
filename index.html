@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
     <title>LinkedIn</title>
     <link rel="icon" href="./image/linkedin.png" type="image/icon type">
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -11,7 +11,7 @@
 <body>
     <header class="header"> 
         <nav class="navbar">
-            <div class="logo div0" style="height: 40px; width: 50px; margin-top: 5px; margin-left: 100px;"><img src="./image/linkedin.png" width="35px" height="35px"></div>
+            <div class="logo div0" style="height: 40px; width: 50px; margin-top: 5px; margin-left: 100px;"><img src="./image/linkedin.png" width="35px" height="35px" class="pointer"></div>
             <div class="search-container div0" style="width: auto;" >
                 <form action="#search" style="margin: 0;">
                   <input type="text" placeholder="Search.." name="search" style="width: 255px; height: 35px; margin-top: 3px; background-color: rgb(225,233,238); border-radius: 5px;">
@@ -55,9 +55,9 @@
                 </a>
                 <div class="dropdown-content" style="width: 150px;" id="dropdown-content">
                     <div style="width: 150px;">
-                        <img src="./image/user.png" width="40px" height="40px" style="float: left;">
-                        <p style="height: 20px; margin: 2px;">Name</p>
-                        <p style="height: 20px; margin: 2px;">Post</p>
+                        <img src="./image/user.png" width="40px" height="40px" style="float: left;" class="pointer">
+                        <p style="height: 20px; margin: 2px;" class="pointer">Name</p>
+                        <p style="height: 20px; margin: 2px;" class="pointer">Post</p>
                     </div>
                     <div style="width: 150px;" class="profile">View Profile</div>
                     <hr><div style="width: 150px;">ACCOUNT</div><hr>
@@ -89,8 +89,8 @@
             <div class="div11">
                 <span style="text-align: center;">
                     <img src="./image/background.png" width="200px" height="50px" style="margin-left: -10px; margin-top: -10px;">
-                    <img src="./image/user.png" width="50px" height="50px" style="margin-top: -30px; padding-left: 65px; z-index: +1;">
-                    <h2>Name</h2>
+                    <img src="./image/user.png" width="50px" height="50px" style="margin-top: -30px; padding-left: 65px; z-index: +1;" class="pointer">
+                    <h2 class="pointer">Name</h2>
                     <h4>Position</h4>
                 </span>
                 <hr>
@@ -111,20 +111,20 @@
                         Access exclusive tools & insights<br>
                         <b>Try Premium Free for 1 Month</b> 
                 </a>
-                <hr>
+                <hr style="margin: 5px;">
                 <img src="./image/bookmark.png" width="15px" height="15px">    
-                <span style="padding: 8px;"> Saved items </span> 
+                <span style="padding: 8px;" class="pointer"> Saved items </span> 
             </div>
             <div class="div12" style="float:left; margin-top: 20px; width: 180px;">
-                <span onclick="toggle2()"><h4>Recent</h4></span>
-                <ul class="recent" id="recent" style="list-style-type: '# ';">
-                    <li>programming</li>
-                    <li>softwaredesign</li>
-                    <li>softwareengineering</li>
-                </ul>
+                <div class="block" onclick="toggle2()" style="text-align: center;">Recent</div>
+                <div class="recent" id="recent">
+                    <div class="news user pointer" style="text-align: left;">programming</div>
+                    <div class="news user pointer" style="text-align: left;">softwaredesign</div>
+                    <div class="news user pointer" style="text-align: left;">softwareengineering</div>
+                </div>
                 <br>
-                <h4>Groups</h4>
-                Events <span style="float: right; font-size: 15px; cursor: pointer;" onclick="myBtn()"><b>+</b></span>
+                <div class="block user" style="color: #2196F3; text-align: center;">Groups</div>
+                <div class="news" style="text-align: left;">Events <span style="float: right; font-size: 15px; cursor: pointer;" onclick="myBtn()"><b>+</b></span></div>
                 <div id="myModal" class="modal">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -203,37 +203,50 @@
                         </div>    
                       </div>
                 </div>
-                <br>
-                <br>
-                <span onclick="toggle3()"><h4>Followed Hashtags</h4></span>
-                <ul class="follow" id="follow" style="list-style-type: '# ';">
-                    <li>programming</li>
-                    <li>softwaredesign</li>
-                    <li>softwareengineering</li>
-                </ul>
-                <br>
-                <hr>
-                <div style="text-align: center;"><b>Discover more</b></div>
+                <div class="block user" style="color: #2196F3; text-align: center;" onclick="toggle3()">Followed Hashtags</div>
+                <div class="follow" id="follow" style="list-style-type: '# ';">
+                    <div class="news user pointer" style="text-align: left;">programming</div>
+                    <div class="news user pointer" style="text-align: left;">softwaredesign</div>
+                    <div class="news user pointer" style="text-align: left;">softwareengineering</div>
+                </div>
+                <hr style="margin: 5px;">
+                <div style="text-align: center;" class="pointer"><b>Discover more</b></div>
             </div>
         </div>
             
         <!--Center-->
         <div class="div2" style="margin-top: 10px;">
             
-            <div class="div11" style="padding: 20px;">
-                <span class="center"><img src="./image/edit.png" width="20px" height="20px"><span style="padding: 10px;">Start a post</span></span><br><hr style="margin: 15px;">
-                <span class="center"><img src="./image/ar-camera.png" width="20px" height="20px"><span style="padding: 10px;">Photo</span></span>
-                <span class="center"><img src="./image/cinema.png" width="20px" height="20px"><span style="padding: 10px;">Video</span></span>
-                <span class="center"><img src="./image/article.png" width="20px" height="20px"><span style="padding: 10px;">Write an article</span></span>
-                <span class="center"><img src="./image/more.png" width="20px" height="20px"><span style="padding: 10px;">More</span></span>
+            <div style="box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); padding: 5px;">
+                <div class="center" style="width: 95%;">
+                    <img src="./image/edit.png" width="20px" height="20px">
+                    <span style="padding: 10px;">Start a post</span>
+                </div>
+                <hr>   
+                <div class="center">
+                    <img src="./image/ar-camera.png" width="20px" height="20px">
+                    <span style="padding: 10px;">Photo</span>
+                </div>
+                <div class="center">
+                    <img src="./image/cinema.png" width="20px" height="20px">
+                    <span style="padding: 10px;">Video</span>
+                </div>
+                <div class="center">
+                    <img src="./image/article.png" width="20px" height="20px">
+                    <span style="padding: 10px;">Write an article</span>
+                </div>
+                <div class="center">
+                    <img src="./image/more.png" width="20px" height="20px">
+                    <span style="padding: 10px;">More</span>
+                </div>
             </div><br>
             <hr><br>
             <div class="div13">
-                <span style="padding: 10px; font-size: 13px; color: darkgrey;">
+                <span style="padding: 10px; font-size: 13px; color: darkgrey;" class="pointer">
                     <img src="./image/user.png" width="50px" height="50px" style="padding: 8px; float: left;">
-                    <b style="color: #666; font-size: 14px;">Name1</b> * 1st 
+                    <b style="font-size: 14px;" class="user pointer">Name1</b> * 1st 
                     <span>
-                        <img src="./image/more.png" width="15px" height="15px" style="float: right; padding: 8px; margin: 5px;" onclick="toggle4()"><br>
+                        <img src="./image/more.png" width="15px" height="15px" style="float: right; padding: 8px; margin: 5px;" class="pointer" onclick="toggle4()"><br>
 
                         <div class="dropdown-content1" style="width: 250px; float: right; margin: auto;" id="dropdown-content1">
                             <div href="#" class="dropdown-list1">
@@ -275,21 +288,21 @@
                 </span><br><br>
                 <hr style="opacity: 0.1;"><br>
                 <span>
-                    <p>
+                    <p style="margin:0">
                         Text Area<br>
                         LinkedIn is a good platform<br>
                         #linkedIn<br>
                     </p>
                 </span>
                 <br>
-                <img src="./image/test.png" width="580px">
+                <img src="./image/test.png" width="580px" class="pointer">
                 <br>    
-                <img src="./image/like.png" width="15px" height="15px" style="margin-left: 5px;"> <span style="font-size: 13px; opacity: 0.4;">385 * 395 Comments</span>
-                <hr><br>
-                <div class="center1"><img src="./image/like.png" width="20px" height="20px"><span style="padding: 10px;">Like</span></div>
-                <div class="center1"><img src="./image/comment.png" width="20px" height="20px"><span style="padding: 10px;">Comment</span></div>
-                <div class="center1"><img src="./image/share.png" width="20px" height="20px"><span style="padding: 10px;">Share</span></div>
-                <div class="center1"><img src="./image/email.png" width="20px" height="20px"><span style="padding: 10px;">Send</span></div>
+                <div style="padding: 5px;"><img src="./image/like.png" width="15px" height="15px" style="margin-left: 5px;"> <span style="font-size: 13px; opacity: 0.4;"><span class="user pointer">392</span> * <span class="user pointer">300 Comments</span></span></div>
+                <hr>
+                <div class="center" style="font-size: 14px; padding: 5px;"><img src="./image/like.png" width="20px" height="20px"><span style="padding: 10px;">Like</span></div>
+                <div class="center" style="font-size: 14px; padding: 5px;"><img src="./image/comment.png" width="20px" height="20px"><span style="padding: 10px;">Comment</span></div>
+                <div class="center" style="font-size: 14px; padding: 5px;"><img src="./image/share.png" width="20px" height="20px"><span style="padding: 10px;">Share</span></div>
+                <div class="center" style="font-size: 14px; padding: 5px;"><img src="./image/email.png" width="20px" height="20px"><span style="padding: 10px;">Send</span></div>
                 <br>
                                
             </div>
@@ -298,7 +311,7 @@
                 <div style="margin-top: 15px;"> 
                     <span style="color: #666;"><a href="#user" class="user" ><b>User ABC</b></a> commented on this</span>
                     <span>
-                        <img src="./image/more.png" width="15px" height="15px" style="float: right; padding: 8px; margin: 5px;" onclick="toggle5()"><br>
+                        <img src="./image/more.png" width="15px" height="15px" style="float: right; padding: 8px; margin: 5px;" class="pointer" onclick="toggle5()"><br>
 
                         <div class="dropdown-content2" style="width: 250px; float: right; margin: auto;" id="dropdown-content2">
                             <div href="#" class="dropdown-list2">
@@ -337,31 +350,31 @@
                     </span>
 
                 </div>
-                <br> <br>
+                <br>
                 <hr style="margin: 5px;">
-                <span style="padding: 10px; font-size: 13px; color: darkgrey;">
+                <span style="padding: 10px; font-size: 13px; color: darkgrey;" class="pointer">
                     <img src="./image/user.png" width="50px" height="50px" style="padding: 8px; float: left;">
-                    <b style="color: #666; font-size: 14px;">Name1</b> * 1st  <br>
+                    <b style="font-size: 14px;" class="user pointer">Name2</b> * 2nd  <br>
                     <span style="padding:5px; margin-left: 5px;">Position</span><br>
                     <span style="padding:5px; margin-left: 5px;">Time-elapsed</span>    
                 </span><br><br>
                 <hr style="opacity: 0.1;"><br>
                 <span>
-                    <p>
+                    <p style="margin:0">
                         Text Area<br>
                         LinkedIn is a good platform<br>
                         #linkedIn<br>
                     </p>
                 </span>
                 <br>
-                <img src="./image/test2.png" width="580px">
+                <img src="./image/test2.png" width="580px" class="pointer">
                 <br>    
-                <img src="./image/like.png" width="15px" height="15px" style="margin-left: 5px;"> <span style="font-size: 13px; opacity: 0.4;">385 * 395 Comments</span>
-                <hr><br>
-                <div class="center1"><img src="./image/like.png" width="20px" height="20px"><span style="padding: 10px;">Like</span></div>
-                <div class="center1"><img src="./image/comment.png" width="20px" height="20px"><span style="padding: 10px;">Comment</span></div>
-                <div class="center1"><img src="./image/share.png" width="20px" height="20px"><span style="padding: 10px;">Share</span></div>
-                <div class="center1"><img src="./image/email.png" width="20px" height="20px"><span style="padding: 10px;">Send</span></div>
+                <div style="padding: 5px;"><img src="./image/like.png" width="15px" height="15px" style="margin-left: 5px;"> <span style="font-size: 13px; opacity: 0.4;"><span class="user pointer">400</span> * <span class="user pointer">200 Comments</span></span></div>
+                <hr>
+                <div class="center" style="font-size: 14px; padding: 5px;"><img src="./image/like.png" width="20px" height="20px"><span style="padding: 10px;">Like</span></div>
+                <div class="center" style="font-size: 14px; padding: 5px;"><img src="./image/comment.png" width="20px" height="20px"><span style="padding: 10px;">Comment</span></div>
+                <div class="center" style="font-size: 14px; padding: 5px;"><img src="./image/share.png" width="20px" height="20px"><span style="padding: 10px;">Share</span></div>
+                <div class="center" style="font-size: 14px; padding: 5px;"><img src="./image/email.png" width="20px" height="20px"><span style="padding: 10px;">Send</span></div>
                 <br>
                                
             </div>
@@ -370,18 +383,26 @@
         <!--Right-->
         <div class="div3" style="margin-top: 10px;">
             <div class="div11">
-                <span>Today's news and views</span>
-                <span class="popup" onclick="popup()" style="float: right;">
-                    <img src="./image/info.png" width="13px" height="13px" >
-                    <span class="popuptext" id="myPopup">These are the day’s top professional news stories and conversations.<br> Learn more about how they’re selected.</span>
-                </span>
-                <ul style="font-size: 14px;">
-                    <li style="padding: 5px;"><b ><a href="#" class="link1 inline1">151 trains to be privatised</a></b><br><span style="font-size: 12px;">2days ago * 1514 readers</span></li>
-                    <li style="padding: 5px;"><b><a href="#" class="link1 inline1">SBI ups hiring: Reports</a></b><br><span style="font-size: 12px;">2days ago * 5805 readers</span></li>
-                </ul>
+                <div style="padding: 5px;">
+                    Today's news and views
+                    <span class="popup" onclick="popup()" style="float: right;">
+                        <img src="./image/info.png" width="13px" height="13px" >
+                        <span class="popuptext" id="myPopup">These are the day’s top professional news stories and conversations.<br> Learn more about how they’re selected.</span>
+                    </span>
+                </div><hr style="opacity: 0.1;">
+                <div style="font-size: 14px;">
+                    <div class="news">
+                        <b ><a href="#" class="link1 inline1">151 trains to be privatised</a></b>
+                        <br><span style="font-size: 12px;">2days ago * 1514 readers</span>
+                    </div><hr style="opacity: 0.1;">
+                    <div class="news">
+                        <b><a href="#" class="link1 inline1">SBI ups hiring: Reports</a></b>
+                        <br><span style="font-size: 12px;">2days ago * 5805 readers</span>
+                    </div>
+                </div>
             </div>
             <div class="div12" style="padding: 0; margin-top: 15px;">
-                <img src="./image/ad.png" alt="Ads" width="92%" height="auto" style="padding: 10px;">
+                <img src="./image/ad.png" alt="Ads" width="92%" height="auto" style="padding: 10px;" class="pointer">
             </div>
             <br>
             <hr>
