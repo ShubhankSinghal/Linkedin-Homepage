@@ -88,7 +88,7 @@ body{
   z-index: 1;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  top:340px;
+  top:310px;
   right: 400px;
 }
 
@@ -115,7 +115,7 @@ position: absolute;
 z-index: 1;
 min-width: 160px;
 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-top:950px;
+top:900px;
 right: 400px;
 }
 
