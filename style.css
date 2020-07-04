@@ -431,7 +431,7 @@ hr{
   height: auto;
   padding: 10px;
   margin: 2px;
-  display: inline-flex;
+  display: inline-block;
   cursor: pointer;
 }
 
