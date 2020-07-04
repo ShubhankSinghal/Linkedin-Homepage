@@ -39,3 +39,8 @@ window.onclick = function(event) {
     document.getElementById("myModal").style.display = "none";
   }
 }
+
+function popup() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}

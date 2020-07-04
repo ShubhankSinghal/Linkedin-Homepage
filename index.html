@@ -9,16 +9,16 @@
     <script src="index.js"></script>
 </head>
 <body>
-    <header>
+    <header class="header"> 
         <nav class="navbar">
             <div class="logo div0" style="height: 40px; width: 50px; margin-top: 5px; margin-left: 100px;"><img src="./image/linkedin.png" width="35px" height="35px"></div>
             <div class="search-container div0" style="width: auto;" >
                 <form action="#search" style="margin: 0;">
-                  <input type="text" placeholder="Search.." name="search" style="width: 250px; height: 30px;">
-                  <button type="submit" style="padding: 0;" class="search"><img src="./image/search.png" height="25px" width="25px" style="padding: 0px;"></button>
-                </form>
+                  <input type="text" placeholder="Search.." name="search" style="width: 255px; height: 35px; margin-top: 3px; background-color: rgb(225,233,238); border-radius: 5px;">
+                  <!--<button type="submit" style="padding: 0;" class="search"><img src="./image/search.png" height="25px" width="25px" style="padding: 0px;"></button>
+                  --> </form>
               </div>
-            <div class="div0" style="margin-left: 120px;" > 
+            <div class="div0" style="margin-left: 120px;border-bottom:3px solid #fff" > 
                 <a href="#home" style="color: #fff;">
                     <img src="./image/home1.png" width="25px" height="25px"><br>
                     Home
@@ -88,7 +88,8 @@
         <div class="div1">
             <div class="div11">
                 <span style="text-align: center;">
-                    <img src="./image/user.png" width="50px" height="50px" style="margin-top: 15px; padding-left: 65px;">
+                    <img src="./image/background.png" width="200px" height="50px" style="margin-left: -10px;">
+                    <img src="./image/user.png" width="50px" height="50px" style="margin-top: -30px; padding-left: 65px; z-index: +1;">
                     <h2>Name</h2>
                     <h4>Position</h4>
                 </span>
@@ -222,7 +223,39 @@
             
         <!--Right-->
         <div class="div3">
-            right
+            <div class="div11">
+                <span>Today's news and views</span>
+                <span class="popup" onclick="popup()" style="float: right;">
+                    <img src="./image/info.png" width="13px" height="13px" >
+                    <span class="popuptext" id="myPopup">These are the day’s top professional news stories and conversations.<br> Learn more about how they’re selected.</span>
+                </span>
+                <ul style="font-size: 14px;">
+                    <li style="padding: 5px;"><b ><a href="#" class="link1 inline1">151 trains to be privatised</a></b><br><span style="font-size: 12px;">2days ago * 1514 readers</span></li>
+                    <li style="padding: 5px;"><b><a href="#" class="link1 inline1">SBI ups hiring: Reports</a></b><br><span style="font-size: 12px;">2days ago * 5805 readers</span></li>
+                </ul>
+            </div>
+            <div class="div12" style="padding: 0; margin-top: 15px;">
+                <img src="./image/ad.png" alt="Ads" width="92%" height="auto" style="padding: 10px;">
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div style="text-align: center; width: 350px; margin-left: -25px;">
+                <a class="foot-links">About</a>
+                <a class="foot-links">Accessibility</a>
+                <a class="foot-links">Help Center</a>
+                <a class="foot-links">Privacy & Terms</a>  
+                <a class="foot-links">Ad Choices</a>
+                <a class="foot-links">Advertising</a>
+                <a class="foot-links">Business Services</a>
+                <a class="foot-links">Get the LinkedIn app</a>
+                <a class="foot-links">More</a>
+            </div><br>
+            <footer style="font-size: 13px; text-align: center;">
+                <b>Linked</b>
+                <img src="./image/linkedin.png" width="14px" height="14px">
+                LinkedIn Corporation © 2020
+            </footer>
         </div>
     </main>
 </body>

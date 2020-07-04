@@ -1,8 +1,18 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
+
+.header{
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .navbar {
     overflow: hidden;
     background-color: rgb(40, 62, 74);
@@ -70,8 +80,10 @@ body{
     cursor: pointer;
 }
 
-.main1{
-    margin-top: 40px;
+.main1 {
+  padding: 16px;
+  margin-top: 70px;
+  height: 1500px; /* Used in this example to enable scrolling */
 }
 
 .div1{
@@ -88,6 +100,11 @@ body{
     padding: 10px;
 }
 
+.div12{
+  top: 70px;
+  width: 100%;
+}
+
 .div2{
     width: 600px;
     height: auto;
@@ -99,7 +116,6 @@ body{
 .div3{
     width: 300px;
     height: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     margin-left: 20px;
     float: left;
 }
@@ -123,13 +139,13 @@ body{
 
 .modal {
     display: none; 
-    position: absolute; 
+    position: fixed; 
     z-index: 1; 
     padding-top: 50px; 
     left: 0;
     top: 0;
     width: 100%; 
-    height: auto;
+    height: 92%;
     overflow: auto; 
     background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0,0.4); 
@@ -164,17 +180,14 @@ body{
     padding: 2px 16px;
     background-color: #fff;
     color: #000;
-    overflow: hidden;
   }
   
-  .modal-body {padding: 2px 16px;
-    overflow: hidden;}
+  .modal-body {padding: 2px 16px;}
   
   .modal-footer {
     padding: 2px 16px;
     background-color: #fff;
     color: #000;
-    overflow: hidden;
   }
 
   .create{
@@ -247,3 +260,64 @@ body{
   .slider.round:before {
     border-radius: 50%;
   }
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+  font-size: 12px;
+}
+
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+.foot-links{
+  padding: 10px;
+  margin: 10px;
+  font-size: 12px;
+  color: rgb(72,93,105);
+}
+
+.foot-links:hover{
+  color: rgb(139,188,215);
+}
